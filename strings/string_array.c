@@ -5,9 +5,8 @@
 
 void main()
 {
-   char name[5][20];
+   char name[5][20]; // array of strings
    int i;
-
 
 
      for(i = 0; i < 5  ; i ++)
