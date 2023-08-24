@@ -7,6 +7,12 @@ struct time
   int h, m, s;
 };
 
+typedef struct time TIME;
+typedef int number;
+
+number a;
+
+
 void print(struct time t)
 {
     printf("%02d:%02d:%02d", t.h, t.m, t.s);
@@ -33,11 +39,20 @@ struct time max(struct time t1, struct time t2)
         return t2;
 }
 
+void reset(struct time * tp)
+{
+    tp -> h  = 0;
+    tp -> m  = 0;
+    tp -> s  = 0;
+}
+
 void main()
 {
   struct time t1 = {10,20,30};
   struct time t2 = {11,20,30};
   struct time t3;
+
+    reset(&t1);
 
     print(t1);
     printf("\n%d ", compare(t1,t2));
