@@ -3,3 +3,13 @@ JavaScript
 Python
 PL/SQL
 TypeScript
+Ruby
+SQL
+Go
+Pascal
+Rust
+C
+C++
+C#
+Visual Basic
+PHP
